@@ -1,0 +1,138 @@
+* {
+  /* Global reset. margin and padding set to 0 everywhere */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 10px, 40px;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  /* padding shorthand. 20px top/bottom, 40px left/right */
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px, 0px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+/* footer p {
+  font-size: 16px;
+  font-family: italic;
+} */
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* semicolon means pseudo classes. with it we can choose to change specific
+child elements in a parent element 
+pseudo classes work best where all the child elements are the same*/
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+/* Styling links - link, visited, hover and active should be in that order */
+
+/* gives color to a link, */ /* visited gives a color to the link after we clicked it */
+
+a:link,
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* styles elements when we hover over them */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* styling while clicking (holding the click) */
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving conflict between selectors id, class, element */
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
